@@ -1,0 +1,12 @@
+{
+  "name": "Example Lobby Boy Backend",
+  "description": "For testing the Stripe integration in Lobby Boy app at https://github.com/supportkit/lobby-boy",
+  "repository": "https://github.com/supportkit/lobby-boy-stripe-backend",
+  "keywords": ["ios", "stripe", "lobby boy"],
+  "env": {
+    "STRIPE_TEST_SECRET_KEY": {
+      "description": "sk_test_5MG02oWK7GklG2sV4OWwemQz",
+      "required": true
+    }
+  }
+}
