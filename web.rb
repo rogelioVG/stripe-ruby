@@ -40,8 +40,9 @@ post '/charge' do
     charge = Stripe::Charge.create(
       :amount => params[:amount], # this number should be in cents
       :currency => "usd",
+      # Hardcoded customerID for testing, should be 'params[:customerId]'. Frontend is not updated to send customerID.
       :customer => "cus_8PsK079KBqJ81p"
-                  #params[:customerId]
+                   #params[:customerId]
     )
   rescue Stripe::CardError => e
     status 402
